@@ -23,10 +23,6 @@ export class MenuPageComponent implements OnInit {
 
   getFishSpecies() {
     this.apiServ.getFishSpecies()
-    // .pipe(
-    //   take(10)
-    // )
-    // .pipe(map(res => res.slice(0, 10)))
     .subscribe((res) => {
       this.dataMenu = res;
       console.log('dataMenu: ', res);

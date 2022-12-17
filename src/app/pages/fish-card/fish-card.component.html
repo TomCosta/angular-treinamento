@@ -1,11 +1,19 @@
 <div class="container contSize">
-    <div class="row rowSize">       
+    <div class="row rowSize bgGray">       
         <img [src]="dataFish['Species Illustration Photo']?.src" class="imgSize" />
     </div>
     <div class="row rowSize">
         <div class="col-sm">
-            Nome: {{ dataFish['Species Name'] }}
-            Descrição: {{ dataFish['Fishing Rate'] }}
+            <h3>
+                {{ dataFish['Species Illustration Photo']?.title.split(' ').slice(0, 1) }}
+            </h3>
+            <p class="protein"> {{ dataFish['Protein'] | diary | number: '1.1-2' }} %</p>
+            <label>
+                Nome: {{ dataFish['Species Name'] }}
+            </label>
+            <p class="textWrap">
+                Descrição: {{ dataFish['Fishing Rate'] }}
+            </p>
         </div>
     </div>
     <div class="row">

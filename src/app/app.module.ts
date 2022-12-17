@@ -9,12 +9,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FishCardComponent } from './pages/fish-card/fish-card.component';
+import { DiaryPipe } from './pipes/diary-pipe/diary.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     UserScreenComponent,
     MenuPageComponent,
-    FishCardComponent
+    FishCardComponent,
+    DiaryPipe
   ],
   imports: [
     BrowserModule,
